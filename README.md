@@ -5,4 +5,4 @@ Basado En gmrum
 
 Dependencia (Opcional)
 
-https://wiki.lxde.org/en/PCManFM
+[Pcmanfm](https://wiki.lxde.org/en/PCManFM)
