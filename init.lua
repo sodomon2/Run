@@ -9,18 +9,15 @@
 
 -- declaro mis variables globales
 
-lgi = require('lgi') -- requiero esta libreria para que me permitira usar GTK
-
-GObject = lgi.GObject -- parte de lgi
-
-GLib = lgi.GLib -- para el treeview
-
+lgi = require('lgi')            -- requiero esta libreria para que me permitira usar GTK
+GObject = lgi.GObject           -- parte de lgi
+GLib = lgi.GLib                 -- para el treeview
 Gtk = lgi.require('Gtk', '2.0') -- el objeto GTK
 
 assert = lgi.assert
 builder = Gtk.Builder()
 
-assert(builder:add_from_file('run.glade'),"error al cargar el archivo") -- hago un debugger, si este archivo existe (true) enlaso el archivo ejemplo.ui, si no existe (false) imprimo un error
+assert(builder:add_from_file('run.ui'),"error al cargar el archivo") -- hago un debugger, si este archivo existe (true) enlaso el archivo ejemplo.ui, si no existe (false) imprimo un error
 ui = builder.objects
 
 local main_window = ui.main_window
@@ -31,9 +28,7 @@ local button_close = ui.btn_close
 
 -- al presionar el boton button_exec
 function button_exec:on_clicked()
-	if (buscador.text == "pcmanfm") then
-		local dirbase = "$HOME"
-		os.execute("pcmanfm " .. dirbase)
+	if (buscador.text == "") then
 	else
 		os.execute(buscador.text.." &")
 	end
