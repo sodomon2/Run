@@ -9,12 +9,12 @@
 
 -- declaro mis variables globales
 
-lgi = require('lgi')            -- requiero esta libreria para que me permitira usar GTK
-GObject = lgi.GObject           -- parte de lgi
-GLib = lgi.GLib                 -- para el treeview
-Gtk = lgi.require('Gtk', '2.0') -- el objeto GTK
+lgi     = require('lgi')            -- requiero esta libreria para que me permitira usar GTK
+GObject = lgi.GObject               -- parte de lgi
+GLib    = lgi.GLib                  -- para el treeview
+Gtk     = lgi.require('Gtk', '2.0') -- el objeto GTK
 
-assert = lgi.assert
+assert  = lgi.assert
 builder = Gtk.Builder()
 
 assert(builder:add_from_file('run.ui'),"error al cargar el archivo") -- hago un debugger, si este archivo existe (true) enlaso el archivo ejemplo.ui, si no existe (false) imprimo un error
