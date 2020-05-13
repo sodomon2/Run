@@ -4,7 +4,7 @@
  @filename  init.lua
  @version   1.0
  @autor     Diaz Urbaneja Victor Diego Alejandro <sodomon2@gmail.com>
- @date      18.06.2018 16:58:13 -04
+ @date      13.05.2020 20:44:25 -04
 ]]--
 
 -- declaro mis variables globales
