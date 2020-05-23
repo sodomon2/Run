@@ -9,10 +9,10 @@
 
 -- declaro mis variables globales
 
-lgi     = require('lgi')            	-- requiero esta libreria para que me permitira usar GTK
-GObject = lgi.GObject           	-- parte de lgi
-GLib    = lgi.GLib                 	-- para el treeview
-Gtk     = lgi.require('Gtk', '3.0') 	-- el objeto GTK
+lgi     = require('lgi')                -- requiero esta libreria para que me permitira usar GTK
+GObject = lgi.GObject                   -- parte de lgi
+GLib    = lgi.GLib                      -- para el treeview
+Gtk     = lgi.require('Gtk', '3.0')     -- el objeto GTK
 
 assert  = lgi.assert
 builder = Gtk.Builder()
